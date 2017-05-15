@@ -5,11 +5,13 @@
       <input class="admin loginInfo" placeholder="account" v-model="admin"></input>
       <input class="password loginInfo" placeholder="password" type="password" v-model="password"></input>
       <br>
-      <Button class="submit" @click="login">登录</Button>
+      <Button class="submit" @click="login" @keyup.enter="login">登录</Button>
     </div>
   </div>
 </template>
+
 <script>
+  import {mapGetters, mapActions} from 'vuex'
   export default{
     data(){
       return {
@@ -17,9 +19,27 @@
         password: ''
       }
     },
-    methods:{
+    //获取数据
+    computed: mapGetters([
+      'logined',
+      'username'
+    ]),
+    methods: {
+      ...mapActions([
+         'setUserInfo'
+      ]),
       login(){
-        alert(1)
+        if(this.admin === 'admin' && this.password ==='admin'){
+           this.setUserInfo(this.admin);
+           this.admin='';
+           this.password='';
+        }else if(this.admin ===''){
+            alert('用户名不能为空')
+        }else if (this.password === ''){
+            alert('密码不能为空')
+        }else {
+          alert("用户名和密码不能为空")
+        }
       }
     }
   }
