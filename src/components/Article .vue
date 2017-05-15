@@ -77,9 +77,11 @@
         .text {
           display: inline-block;
           padding-left: 20px;
+          font-size: 24px;
         }
       }
       .content {
+        font-size: 20px;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
@@ -94,6 +96,7 @@
           p{
             margin: 20px 0;
             line-height: 2;
+            font-size: 14px;
           }
         }
       }

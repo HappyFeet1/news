@@ -11,5 +11,8 @@
 </script>
 
 <style scoped>
+  #cache{
+    padding-top: 46px;
+  }
 
 </style>

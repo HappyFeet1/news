@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Nav_view></Nav_view>
+    <loading v-show="loading"></loading>
+    <Nav_view v-show="head"></Nav_view>
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -14,11 +15,31 @@
   import Nav_view from './components/Nav.vue'
   import Foot_view from '@/components/Foot.vue'
 
+
+  import {mapGetters, mapActions} from 'vuex'
+
   export default {
     name: 'app',
     components: {
       Nav_view,
       Foot_view
+    },
+    computed: mapGetters([
+      'head',
+      'loading'
+    ]),
+    watch: {
+      $route(to, from){
+//          console.log(to,from)
+        if (to.path == '/users' || to.path == '/article/' + this.$route.params.id) {
+          this.$store.dispatch('hideHeader')
+          //我们通知action
+        } else {
+          this.$store.dispatch('showHeader')
+        }
+      }
+    },
+    mounted(){
     }
   }
 </script>
@@ -29,7 +50,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    margin-top: 46px;
     margin-bottom: 46px;
   }
 </style>

@@ -9,5 +9,6 @@
 
 <style scoped>
 #follow {
+  padding-top: 46px;
 }
 </style>

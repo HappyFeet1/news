@@ -6,5 +6,6 @@
 
 <style scoped>
   #column{
+    padding-top: 46px;
   }
 </style>

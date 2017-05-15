@@ -17,7 +17,7 @@
       </mt-tab-item>
       <mt-tab-item id="我的">
 
-        <router-link to="/user-info">
+        <router-link to="/users">
           <img src="../assets/images/record.png">
           <p>我的</p>
         </router-link>
@@ -61,6 +61,7 @@
     img{
       width: 24px;
       height: 24px;
+      padding: 0 40px;
     }
   }
 </style>

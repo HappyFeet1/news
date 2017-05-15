@@ -55,6 +55,9 @@
         color: black;
         font-size: 16px;
       }
+      p{
+        font-size: 14px;
+      }
     }
   }
 }

@@ -19,5 +19,7 @@
   }
 </script>
 <style scoped>
-
+.banner{
+  padding-top: 46px;
+}
 </style>
