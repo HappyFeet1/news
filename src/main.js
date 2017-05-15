@@ -10,6 +10,9 @@ require('../static/css/reset.css');
 import MintUi from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+import axios from 'axios'
+Vue.prototype.$http = axios;
+
 
 Vue.use(MintUi);
 

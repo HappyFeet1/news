@@ -9,8 +9,8 @@
 </template>
 
 <script>
-  import Nav_view from './components/Nav_view.vue'
-  import Foot_view from '@/components/Foot_view.vue'
+  import Nav_view from './components/Nav.vue'
+  import Foot_view from '@/components/Foot.vue'
 
   export default {
     name: 'app',
@@ -26,8 +26,8 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    margin-top: 46px;
+    margin-bottom: 46px;
   }
 </style>

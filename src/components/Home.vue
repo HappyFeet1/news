@@ -1,12 +1,23 @@
 <template>
-  <div class="hello">
+  <div class="banner">
     <!--轮播图 内容-->
-    this is home
+    <Banner></Banner>
+    <content_view></content_view>
   </div>
 </template>
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<script>
+  import Banner from './Banner.vue'
+  import content_view  from './Content.vue'
+  export default{
+    components: {
+      Banner,
+      content_view
+    }
+  }
+</script>
 <style scoped>
 
 </style>

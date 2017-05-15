@@ -34,4 +34,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
    想在js z中引入css模块 style-loader css-loader
 
-
+6. 编写首页轮播 和 内容组件
