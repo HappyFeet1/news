@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <Nav_view></Nav_view>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <Foot_view></Foot_view>
 
 
-    </div>
+  </div>
 </template>
 
 <script>

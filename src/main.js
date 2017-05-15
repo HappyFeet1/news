@@ -10,12 +10,19 @@ require('../static/css/reset.css');
 import MintUi from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+
+
 import axios from 'axios'
 Vue.prototype.$http = axios;
 
 
 Vue.use(MintUi);
 
+
+Vue.filter('normalData', function (time) {
+  let oDate = new Date(parseInt(time) * 1000);
+  return oDate.getFullYear() + '-' + (oDate.getMonth() + 1) + '-' + oDate.getDate() + ' ' + oDate.getHours() + ':' + oDate.getMinutes() + ':' + oDate.getSeconds();
+});
 
 Vue.config.productionTip = false
 
