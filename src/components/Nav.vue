@@ -14,7 +14,7 @@
     position: fixed;
     width: 100%;
     height: 46px;
-    top: 0;
+    top: 46px;
     z-index: 1000;
   }
   .mint-navbar .mint-tab-item .mint-tab-item-label a{

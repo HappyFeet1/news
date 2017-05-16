@@ -115,7 +115,8 @@
       left: 0;
       right: 0;
       z-index: 1;
-      background: #d43d3d;
+      /*background: #d43d3d;*/
+      background: #26a2ff;
       text-align: center;
       color: #fff;
       .loginTitl {
@@ -130,6 +131,7 @@
         outline: none;
         font-size: 18px;
         height: 32px;
+        margin-top: 17px;
       }
       .submit {
         color: black;
@@ -176,7 +178,7 @@
         .info-bar-item {
           text-decoration: none;
           flex: 1;
-          height: 1.2rem;
+          height: 45px;
           box-sizing: border-box;
           border-left: 1px solid #666;
           text-align: center;

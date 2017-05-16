@@ -31,7 +31,13 @@
     watch: {
       $route(to, from){
 //          console.log(to,from)
-        if (to.path == '/users' || to.path == '/article/' + this.$route.params.id || to.path == '/mydetail' || to.path == '/devices') {
+        if (to.path == '/users' ||
+            to.path == '/article/' + this.$route.params.id ||
+            to.path == '/mydetail' ||
+            to.path == '/devices' ||
+            to.path == '/cache' ||
+            to.path == '/follow' ||
+            to.path == '/column') {
           this.$store.dispatch('hideHeader')
           //我们通知action
         } else {

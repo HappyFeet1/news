@@ -25,6 +25,7 @@
 </script>
 <style>
   .page-swipe {
+    margin-top: 46px;
     height: 167px;
   }
 
