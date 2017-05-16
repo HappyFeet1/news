@@ -5,8 +5,12 @@ const state = {
   loading: true,
   userName: JSON.parse(localStorage.getItem('userName')) || {},       //用户名
   //登录状态
-  logined: JSON.parse(localStorage.getItem('loginStatus')) || false
-
+  logined: JSON.parse(localStorage.getItem('loginStatus')) || false,
+  vitality: {            //my页个人信息（暂无用，等后续处理）
+    follow: 14,
+    fans: 0,
+    visitor: 1
+  },
 
 };
 const mutations = {

@@ -6,7 +6,9 @@ export default {
 
   loading: state => state.loading,
 
-  username: state => state.username,
+  userName: state => state.userName,
 
-  logined: state => state.logined
+  logined: state => state.logined,
+
+  vitality: state => state.vitality
 }

@@ -8,6 +8,7 @@ import cache from '@/components/cache'
 
 import Article from '@/components/Article .vue'
 import users from '@/components/UserInfo.vue'
+import detail from '@/components/users_detail.vue'
 
 Vue.use(Router);
 
@@ -49,6 +50,10 @@ export default new Router({
     {
       path: '*',
       redirect: '/home'
+    },
+    {
+      path: '/detail',
+      component: detail
     }
   ]
 })
