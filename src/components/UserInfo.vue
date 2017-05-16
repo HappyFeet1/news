@@ -7,17 +7,21 @@
         <span class="my-name">{{userName}}</span>
       </router-link>
       <div class="info-bar clearfix">
-        <router-link to="/selfpage" class="info-bar-item">
+        <router-link to="/mypage" class="info-bar-item">
           <p>1</p>动态
+
         </router-link>
-        <router-link to="/care" class="info-bar-item">
+        <router-link to="" class="info-bar-item">
           <p>{{vitality.follow}}</p>关注
+
         </router-link>
-        <router-link to="/care" class="info-bar-item">
+        <router-link to="" class="info-bar-item">
           <p>{{vitality.fans}}</p>粉丝
+
         </router-link>
-        <router-link to="/care" class="info-bar-item">
+        <router-link to="/mydetail" class="info-bar-item">
           <p>{{vitality.visitor}}</p>我的资料
+
         </router-link>
       </div>
     </div>
@@ -33,22 +37,30 @@
     <div class="tipItems">
       <i class="iconfont icon-xitongshezhi"></i>
       消息通知
+
     </div>
-    <div class="tipItems">
-      <i class="iconfont  icon-xitongshezhi"></i>
-      系统设置
-    </div>
+    <router-link to="/devices">
+      <div class="tipItems">
+        <i class="iconfont  icon-xitongshezhi"></i>
+        系统设置
+
+      </div>
+    </router-link>
+
     <div class="tipItems">
       <i class="iconfont icon-guanyu-copy"></i>
       关于
+
     </div>
     <div class="tipItems">
       <i class="iconfont icon-msnui-theme"></i>
       主题换肤
+
     </div>
     <div class="tipItems">
       <i class="iconfont icon-wdsy"></i>
       夜间模式
+
     </div>
   </div>
 </template>

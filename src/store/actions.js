@@ -18,5 +18,8 @@ export default {
     localStorage.setItem('logined',true);
     commit('getUserData',res);
     commit('logining',true)
+  },
+  changeIntroduce:({commit})=>{
+    commit('changeIntroduce')
   }
 }

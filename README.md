@@ -35,3 +35,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
    想在js z中引入css模块 style-loader css-loader
 
 6. 编写首页轮播 和 内容组件
+7. 登录组件 vuex 本地存储用户名登录状态
+8. 简单使用iview 引入 Header slot 修改资料 系统设置

@@ -11,6 +11,9 @@ require('../static/css/reset.css');
 import MintUi from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+//iview
+import Iview from 'iview'
+import 'iview/dist/styles/iview.css'
 //axios
 import axios from 'axios'
 Vue.prototype.$http = axios;
@@ -19,6 +22,8 @@ Vue.prototype.$http = axios;
 import store from './store/index'
 
 Vue.use(MintUi);
+Vue.use(Iview);
+
 
 //filter
 Vue.filter('normalData', function (time) {

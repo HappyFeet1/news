@@ -10,5 +10,7 @@ export default {
 
   logined: state => state.logined,
 
-  vitality: state => state.vitality
+  vitality: state => state.vitality,
+
+  introduce: state => state.introduce
 }

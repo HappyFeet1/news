@@ -11,6 +11,10 @@ const state = {
     fans: 0,
     visitor: 1
   },
+  //个人介绍
+  introduce: '',
+  hasIntroduce: false,    //是否已有个人简介
+
 
 };
 const mutations = {
@@ -31,9 +35,15 @@ const mutations = {
   logining(state, payload){
     state.logined = payload
   },
-  getUserData(state,res){
+  getUserData(state, res){
     state.userName = res
+  },
+  changeIntroduce(state, introduce){
+    state.introduce = introduce,
+    state.hasIntroduce = true
+
   }
+
 };
 
 export default {

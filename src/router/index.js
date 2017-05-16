@@ -9,6 +9,8 @@ import cache from '@/components/cache'
 import Article from '@/components/Article .vue'
 import users from '@/components/UserInfo.vue'
 import detail from '@/components/users_detail.vue'
+import mydetail from '@/components/mydetail.vue'
+import devices from '@/components/devices.vue'
 
 Vue.use(Router);
 
@@ -51,10 +53,16 @@ export default new Router({
       path: '*',
       redirect: '/home'
     },
+
     {
-      path: '/detail',
-      component: detail
+      path: '/mydetail',
+      component: mydetail
+    },
+    {
+      path: '/devices',
+      component: devices
     }
+
   ]
 })
 const scrollBehavior = (to, from, savedPosition) => {
